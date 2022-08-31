@@ -1,0 +1,69 @@
+// @font-face {
+//     font-family: myriadpro;
+//     src: url('webfonts/Myriad-Pro-Regular.woff') format('woff');
+// }
+
+/// Others two font
+/// Playfair Display
+/// Titillium Web
+
+///Color varriable
+$color-primary: #1B1642;
+$color-secondary: #6658EA;
+$text-color: #575A7B;
+$color-black: #000;
+$color-white: #fff;
+$color-grey: #CCCCCC;
+$color-bg: #F3F8FF;
+$title-color: #F5C070;
+$color-paragraph: #F0F0F0;
+$color-fheading: #F3F8FF;
+
+$shadow-dark: 0 2rem 6rem rgba(0, 0, 0, .3);
+$shadow-light: 0 2rem 5rem rgba(0,0,0,.06);
+
+$bp-large: 68.75em; ///1100px
+$bp-medium: 61.9375em; //992px
+$bp-small: 43.75em;  /// 600px
+
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html {
+    font-size: 62.5%;
+
+    @media only screen and (max-width: $bp-large){
+        font-size: 50%;
+    }
+}
+
+body {
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+
+    position: relative;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.container {
+    max-width: 120rem;
+    margin: 0 auto;
+}
+
+img {
+    width: 100%;
+    height: auto;
+}

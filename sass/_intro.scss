@@ -1,0 +1,29 @@
+/// Intro section start
+
+.intro {
+    background-color: $color-bg;
+
+    @media only screen and (max-width: $bp-medium){
+        padding: 12rem 10rem 5rem;
+    }
+    @media only screen and (max-width: $bp-small){
+        padding: 10rem 3rem 5rem;
+    }
+
+    &__left {
+        padding: 4.4rem;
+        p {
+            margin: 3.8rem 0;
+            width: 80%;
+        }
+
+        a:not(:last-child) {
+            margin-right: 3rem;
+        }
+    }
+
+}
+
+.heading-primary span {
+    color: $color-secondary;
+}

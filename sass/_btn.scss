@@ -1,0 +1,26 @@
+/// All btn coding
+
+.btn {
+    background-color: $color-secondary;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.8rem;
+    line-height: 2.1rem;
+    color: $color-white;
+    display: inline-block;
+    padding: 2rem 3.9rem;
+    border: 1.5px solid transparent;
+    border-radius: 2px;
+    transition: all 0.3s ease;
+
+    &:hover {
+        background-color: $color-white;
+        color: $color-secondary;
+        border: 1.5px solid $color-secondary;
+    }
+
+    &:active {
+        transform: translateY(-3px);
+    }
+}

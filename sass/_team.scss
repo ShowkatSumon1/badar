@@ -1,0 +1,71 @@
+/// Team section start
+
+.team {
+    background-color: $color-bg;
+    text-align: center;
+    padding-top: 30rem;
+
+    @media only screen and (max-width: $bp-medium){
+        padding: 5rem 20rem 5rem;
+    }
+    @media only screen and (max-width: $bp-small){
+        padding: 5rem 3rem 5rem;
+    }
+    h2 {
+        width: 50%;
+        margin: 0 auto 7.8rem;
+        @media only screen and (max-width: $bp-medium){
+            width: 100%;
+        }
+    }
+
+    &__group {
+        text-align: left;
+        width: 30rem;
+        margin: auto;
+        @media only screen and (max-width: $bp-medium){
+            width: 100%;
+            text-align: center;
+            margin: 3rem auto;
+        }
+
+        img {
+            width: 300px;
+            height: 300px;
+            text-align: center;
+        }
+
+        h5 {
+            font-size: 2.8rem;
+            line-height: 130%;
+            color: $color-primary;
+            margin-top: 1.8rem;
+        }
+
+        p {
+            font-size: 1.8rem;
+            line-height: 130%;
+            color: $text-color;
+            margin: 0.6rem 0 1.5rem;
+        }
+    }
+}
+.social-menu {
+    padding: 0;
+    li {
+        display: inline-block;
+        &:not(:last-child) {
+            margin-right: 1.7rem;
+        }
+        a {
+            display: block;
+            transition: all 0.3s ease;
+            i {
+                font-size: 2.5rem;
+            }
+            &:hover {
+                color: $text-color;
+            }            
+        } 
+    }
+}

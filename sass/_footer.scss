@@ -1,0 +1,63 @@
+/// Footer section start
+
+.footer {
+    background-color: $color-primary;
+    color: $color-white;
+
+    &__menu {
+
+        &__items {
+            display: flex;
+            justify-content: space-around;
+
+            h6 {
+                font-size: 2rem;
+                line-height: 3rem;
+                color: $color-fheading;
+                margin-bottom: 2rem;      
+            }
+
+            ul {
+                padding: 0;
+                li {
+                    &:not(:last-child) {
+                        margin-bottom: 2rem;
+                    }
+                    a {
+                        display: inline-block;
+                        font-size: 1.7rem;
+                        line-height: 2.1rem;
+                        color: $color-paragraph;
+                        transition: all 0.3s ease;   
+                        
+                        &:hover {
+                            color: $color-secondary;
+                        }
+                    }
+                }
+                
+            }
+        }
+    }
+
+    &__social {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__copyright {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1rem 0;
+
+        .logo {
+            color: $color-white;
+        }
+        p {
+            font-size: 1.8rem;
+            line-height: 2.1rem;        
+        }
+    }
+}

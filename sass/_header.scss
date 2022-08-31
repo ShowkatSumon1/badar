@@ -1,0 +1,107 @@
+/// Header section start
+
+.header {
+    background-color: $color-bg;
+    padding: 2rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+
+    .flex {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        position: relative;
+    }
+
+    &__icon {
+        display: none;
+        font-size: 3rem;
+        margin-right: 2rem;
+        @media only screen and (max-width: $bp-medium){
+            display: inline-block;
+        }
+    }
+
+    .menu {
+        display: flex;
+        align-items: center;
+
+        @media only screen and (max-width: $bp-medium){
+            display: none;
+        }
+
+        &__link {
+            display: inline-block;
+            padding: 0 1.5rem;
+            font-size: 1.8rem;
+            line-height: 2.1rem;
+            color: $color-primary;
+            transition: all 0.3s ease;
+        }
+        &__link:hover,
+        &__link:active {
+            color: $color-secondary;
+        }
+    }
+
+}
+.logo {
+    font-family: 'Playfair Display';
+    font-weight: 700;
+    font-size: 4.2rem;
+    line-height: 5.6rem;
+    color: $color-primary;
+}
+
+.mobile {
+    position: fixed;
+    top: 9rem;
+    right: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: $color-primary;
+    z-index: 9;
+
+    &__menu {
+        position: absolute;
+        top: 40%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+
+        &__item {
+            margin: 1rem;
+        }
+
+        &__link{
+            &:link,
+            &:visited {
+                font-size: 3rem;
+                font-weight: 300;
+                color: $color-white;
+                display: inline-block;
+                padding: 1rem 2rem;
+
+                background: linear-gradient(120deg, transparent 0, transparent 50%, $color-secondary 50%);
+                background-size: 230%;
+                transition: all 0.4s ease;
+            }
+            &:hover,
+            &:active {
+                background-position: 100%;
+                color: $color-black;
+                transform: translateX(1rem);
+            }
+        }
+        
+    }
+}
+
+.fixed {
+    width: 100%;
+    position: fixed;
+    z-index: 10;
+}
